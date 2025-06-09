@@ -1,1 +1,188 @@
-<h3>Please, talk to <a href="mailto:me@italomenezes.dev?subject=Yo!">me</a>.</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ítalo Menezes: Driving Digital Innovation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1a202c;
+      --accent: #2563eb;
+      --muted: #4a5568;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1117;
+        --fg: #e2e8f0;
+        --accent: #3b82f6;
+        --muted: #94a3b8;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 2rem 1rem;
+    }
+    header { text-align: center; margin-bottom: 3rem; }
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 3.5rem);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 2.5rem 0 1rem;
+    }
+    p.lead { font-size: 1.125rem; max-width: 60ch; margin: 0 auto; color: var(--muted); }
+
+    /* Sections */
+    section { max-width: 900px; margin: 0 auto; }
+    ul.highlight {
+      list-style: none;
+      margin-top: 1rem;
+    }
+    ul.highlight li {
+      padding-left: 1.5rem;
+      position: relative;
+      margin-bottom: 1rem;
+    }
+    ul.highlight li::before {
+      content: "➜";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    /* Stack grid */
+    .stack {
+      display: grid;
+      gap: 0.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      margin-top: 1rem;
+    }
+    .tag {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.35rem 0.65rem;
+      border-radius: 0.375rem;
+      font-size: 0.875rem;
+      text-align: center;
+    }
+
+    /* Timeline */
+    .timeline {
+      border-left: 2px solid var(--accent);
+      margin-top: 1rem;
+    }
+    .entry {
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .entry::before {
+      content: "";
+      width: 0.75rem;
+      height: 0.75rem;
+      background: var(--accent);
+      border-radius: 50%;
+      position: absolute;
+      left: -0.45rem;
+      top: 0.25rem;
+    }
+    .entry h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.25rem; }
+    .entry span { font-size: 0.875rem; color: var(--muted); }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ítalo Menezes</h1>
+    <p class="lead">I transform complex commerce & mobile ideas into scalable, production‑ready products.</p>
+  </header>
+
+  <main>
+    <section id="impact">
+      <h2>How I Create Impact</h2>
+      <ul class="highlight">
+        <li><strong>Commerce & marketplace scale from day one&nbsp;—</strong> Led DXL’s Next.js 14 + Commercetools Frontend stack, cutting feature lead‑time from weeks to hours while keeping merchandiser customization friction‑free.</li>
+        <li><strong>Cross‑platform reach without tech debt&nbsp;—</strong> Engineered Kyte’s offline‑first POS ecosystem (React Native + native bridges + Next.js admin) now serving 100k+ merchants with &lt;0.1% crash rate.</li>
+        <li><strong>Hands‑on leadership&nbsp;—</strong> Promoted three times at Orium (Senior SE → Squad Lead → Engineering Manager) while mentoring developers and shipping production code across AWS, Terraform and headless stacks.</li>
+        <li><strong>Fast, safe delivery culture&nbsp;—</strong> Automated CI/CD with GitHub Actions & Azure DevOps, enforced TDD and employed feature flags for reliable releases.</li>
+        <li><strong>Cloud polyglot&nbsp;—</strong> Google Cloud Digital Leader & seasoned AWS/Azure architect designing serverless, container & hybrid topologies.</li>
+      </ul>
+    </section>
+
+    <section id="stack">
+      <h2>Core Stack & Specialties</h2>
+      <div class="stack">
+        <span class="tag">JavaScript / TypeScript</span>
+        <span class="tag">React / React Native</span>
+        <span class="tag">Next.js 14/15</span>
+        <span class="tag">NestJS & Express</span>
+        <span class="tag">GraphQL & tRPC</span>
+        <span class="tag">Composable Commerce</span>
+        <span class="tag">AWS, GCP, Azure DevOps</span>
+        <span class="tag">Terraform (IaC)</span>
+        <span class="tag">Auth0, Paytronix, P97, Stripe</span>
+        <span class="tag">Realtime & Offline data</span>
+        <span class="tag">Objective‑C / Swift / Java</span>
+        <span class="tag">Jest & RN Testing Library</span>
+        <span class="tag">SOLID & Clean Arch coaching</span>
+      </div>
+    </section>
+
+    <section id="timeline">
+      <h2>Proven Impact Timeline</h2>
+      <div class="timeline">
+        <div class="entry">
+          <h3>2024 – 2025 · Engineering Manager — Orium</h3>
+          <span>Owned final delivery of DXL’s headless storefront; balanced roadmap, budget & squad velocity, advising on tax engines & personalization.</span>
+        </div>
+        <div class="entry">
+          <h3>2022 – 2023 · Tech Lead — Orium</h3>
+          <span>Delivered a headless React Native app for Kum&Go, integrating Firebase, Auth0, Paytronix & P97 to serve 1M+ users on day one.</span>
+        </div>
+        <div class="entry">
+          <h3>2018 – 2022 · Tech Lead — Kyte</h3>
+          <span>Scaled a multi‑tenant POS platform; introduced a shared‑code monorepo & doubled MAU with a social‑commerce module.</span>
+        </div>
+        <div class="entry">
+          <h3>2017 – 2018 · Mobile Dev — FFIT / UNIMED</h3>
+          <span>Shipped hybrid & React Native apps delivering big‑data health insights & improved accessibility for millions of policy‑holders.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="credentials">
+      <h2>Credentials That De‑Risk Your Project</h2>
+      <ul class="highlight">
+        <li>Composable Commerce Developer — Commercetools (Oct 2024)</li>
+        <li>Google Cloud Digital Leader (Jul 2024)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let’s Build Something Great</h2>
+      <p><a href="mailto:italo.menezes@gmail.com">italo.menezes@gmail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/italo-menezes/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://x.com/ital0" target="_blank" rel="noopener">X (Twitter)</a></p>
+    </section>
+  </main>
+</body>
+</html>
